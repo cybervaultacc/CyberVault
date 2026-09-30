@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CyberVault</title>
+
+    <style>
+
+        body {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url("BG.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+
+
+        /* CYBERVAULT LOGO */
+
+        .logo {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 0;
+            color: red;
+
+            background:
+                radial-gradient(circle at 10% 20%, black 2px, transparent 3px),
+                radial-gradient(circle at 30% 70%, black 3px, transparent 4px),
+                radial-gradient(circle at 50% 35%, black 2px, transparent 3px),
+                radial-gradient(circle at 70% 65%, black 3px, transparent 4px),
+                radial-gradient(circle at 90% 25%, black 2px, transparent 3px),
+                red;
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            color: red;
+        }
+
+
+        /* SEARCH BAR */
+
+        .search-box {
+            margin: 10px auto 30px;
+        }
+
+        .search-box input {
+            width: 400px;
+            max-width: 80%;
+            padding: 14px 20px;
+            font-size: 17px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            border: 2px solid red;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            box-shadow: 0 0 15px red;
+        }
+
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+
+
+        /* IMAGES */
+
+        img {
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+
+        /* DOWNLOAD BUTTON */
+
+        a {
+            background-color: red;
+            color: black;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+
+        /* NOTE */
+
+        .note {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+        /* GAME CARD */
+
+        .game-card {
+            width: 800px;
+            max-width: 90%;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.75);
+            border: 2px solid red;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+        }
+
+        .game-card h2 {
+            color: red;
+            font-size: 35px;
+            margin-top: 0;
+        }
+
+        .game-card p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .game-card img {
+            width: 350px;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .game-card a {
+            background-color: red;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .game-card a:hover {
+            background-color: black;
+            border: 1px solid red;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SEARCH BAR -->
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search games...">
+    </div>
+
+
+    <!-- CYBERVAULT LOGO -->
+
+    <svg width="500" height="90">
+
+        <defs>
+
+            <pattern id="dots" width="35" height="30" patternUnits="userSpaceOnUse">
+
+                <circle cx="8" cy="8" r="2" fill="black"/>
+                <circle cx="25" cy="20" r="4" fill="black"/>
+                <circle cx="15" cy="26" r="1.5" fill="black"/>
+
+            </pattern>
+
+        </defs>
+
+
+        <text x="250" y="65"
+              text-anchor="middle"
+              font-size="55"
+              font-family="Arial"
+              font-weight="bold"
+              fill="red">
+
+            CyberVault
+
+        </text>
+
+
+        <text x="250" y="65"
+              text-anchor="middle"
+              font-size="55"
+              font-family="Arial"
+              font-weight="bold"
+              fill="url(#dots)">
+
+            CyberVault
+
+        </text>
+
+    </svg>
+
+
+    <!-- Assassin's Creed Mirage game card -->
+
+    <div class="game-card" data-game="AC Mirage Assassin's Creed Mirage">
+
+        <h2>Assassin's Creed Mirage</h2>
+
+        <p>
+           Explore ninth-century Baghdad as Basim, uncover hidden secrets,
+master stealth, and become a skilled Assassin.
+        </p>
+
+
+        <img src="ACMirage1.png" alt="Assassin's Creed Mirage">
+        <img src="ACMirage2.png" alt="Assassin's Creed Mirage">
+        <img src="ACMirage3.png" alt="Assassin's Creed Mirage">
+
+        <!-- GAME INFO -->
+
+<h2>Game Info</h2>
+
+<p><b>Developer:</b> Ubisoft Montreal</p>
+
+<p><b>Publisher:</b> Ubisoft</p>
+
+<p><b>Release Date:</b> 14 November 2023</p>
+
+<p><b>Genre:</b> Action / Adventure</p>
+
+<p><b>Platforms:</b> PC, PlayStation 4, PlayStation 5, Xbox One,
+Xbox Series X|S, iOS</p>
+
+
+<!-- SYSTEM REQUIREMENTS -->
+
+<h2>System Requirements</h2>
+
+<h3>Minimum</h3>
+
+<p><b>OS:</b> Windows 10/11</p>
+
+<p><b>CPU:</b> Intel Core i7-4790K / AMD Ryzen 5 1600</p>
+
+<p><b>GPU:</b> Intel Arc A380 6GB / NVIDIA GeForce GTX 1060 6GB /
+AMD Radeon RX 570 4GB</p>
+
+<p><b>RAM:</b> 8 GB (Dual-channel)</p>
+
+<p><b>VRAM:</b> 6 GB / 4 GB</p>
+
+<p><b>Storage:</b> 40 GB</p>
+
+<p><b>Target:</b> 1080p, Low settings, 30 FPS</p>
+
+
+<h3>Recommended</h3>
+
+<p><b>OS:</b> Windows 10/11</p>
+
+<p><b>CPU:</b> Intel Core i7-8700K / AMD Ryzen 5 3600</p>
+
+<p><b>GPU:</b> Intel Arc A750 8GB / NVIDIA GeForce GTX 1660 Ti 6GB /
+AMD Radeon RX 5600 XT 6GB</p>
+
+<p><b>RAM:</b> 16 GB (Dual-channel)</p>
+
+<p><b>VRAM:</b> 8 GB / 6 GB</p>
+
+<p><b>Storage:</b> 40 GB</p>
+
+<p><b>Target:</b> 1080p, High settings, 60 FPS</p>
+
+
+        <p class="note">
+            Note: A RAR extractor is required to extract the game files.
+        </p>
+
+
+        <p>
+            <b>Need a RAR extractor?</b>
+            <a href="https://www.rarlab.com/download.htm">
+                Get WinRAR
+            </a>
+        </p>
+
+
+        <a href="https://gofile.io/d/fUPD7UUq">
+            Download
+        </a>
+
+    </div>
+
+
+    <!-- SEARCH FUNCTION -->
+
+    <script>
+
+        const search = document.getElementById("search");
+        const games = document.querySelectorAll(".game-card");
+
+        search.addEventListener("input", function () {
+
+            const searchText = search.value.toLowerCase();
+
+            games.forEach(function (game) {
+
+                const gameName = game.dataset.game.toLowerCase();
+
+                if (gameName.includes(searchText)) {
+                    game.style.display = "block";
+                } else {
+                    game.style.display = "none";
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CyberVault</title>
+
+    <style>
+
+        body {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url("BG.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+
+
+        /* CYBERVAULT LOGO */
+
+        .logo {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 0;
+            color: red;
+
+            background:
+                radial-gradient(circle at 10% 20%, black 2px, transparent 3px),
+                radial-gradient(circle at 30% 70%, black 3px, transparent 4px),
+                radial-gradient(circle at 50% 35%, black 2px, transparent 3px),
+                radial-gradient(circle at 70% 65%, black 3px, transparent 4px),
+                radial-gradient(circle at 90% 25%, black 2px, transparent 3px),
+                red;
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            color: red;
+        }
+
+
+        /* SEARCH BAR */
+
+        .search-box {
+            margin: 10px auto 30px;
+        }
+
+        .search-box input {
+            width: 400px;
+            max-width: 80%;
+            padding: 14px 20px;
+            font-size: 17px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            border: 2px solid red;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            box-shadow: 0 0 15px red;
+        }
+
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+
+
+        /* IMAGES */
+
+        img {
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+
+        /* DOWNLOAD BUTTON */
+
+        a {
+            background-color: red;
+            color: black;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+
+        /* NOTE */
+
+        .note {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+        /* GAME CARD */
+
+        .game-card {
+            width: 800px;
+            max-width: 90%;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.75);
+            border: 2px solid red;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+        }
+
+        .game-card h2 {
+            color: red;
+            font-size: 35px;
+            margin-top: 0;
+        }
+
+        .game-card p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .game-card img {
+            width: 350px;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .game-card a {
+            background-color: red;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .game-card a:hover {
+            background-color: black;
+            border: 1px solid red;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SEARCH BAR -->
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search games...">
+    </div>
+
+
+    <!-- CYBERVAULT LOGO -->
+
+    <svg width="500" height="90">
+
+        <defs>
+
+            <pattern id="dots" width="35" height="30" patternUnits="userSpaceOnUse">
+
+                <circle cx="8" cy="8" r="2" fill="black"/>
+                <circle cx="25" cy="20" r="4" fill="black"/>
+                <circle cx="15" cy="26" r="1.5" fill="black"/>
+
+            </pattern>
+
+        </defs>
+
+
+        <text x="250" y="65"
+              text-anchor="middle"
+              font-size="55"
+              font-family="Arial"
+              font-weight="bold"
+              fill="red">
+
+            CyberVault
+
+        </text>
+
+
+        <text x="250" y="65"
+              text-anchor="middle"
+              font-size="55"
+              font-family="Arial"
+              font-weight="bold"
+              fill="url(#dots)">
+
+            CyberVault
+
+        </text>
+
+    </svg>
+
+
+    <!-- SUBNAUTICA GAME CARD -->
+
+    <div class="game-card" data-game="Subnautica">
+
+        <h2>Subnautica</h2>
+
+        <p>
+            Survival and exploration game set on an alien ocean planet.
+        </p>
+
+
+        <img src="subnautica1.png" alt="Subnautica screenshot">
+        <img src="subnautica2.png" alt="Subnautica screenshot">
+
+
+        <h3>Game Info</h3>
+
+        <p><b>Genre:</b> Adventure, Indie</p>
+        <p><b>Developer:</b> Unknown Worlds Entertainment</p>
+        <p><b>Platform:</b> PC (Windows)</p>
+
+
+        <h3>System Requirements</h3>
+
+        <p><b>OS:</b> Windows Vista SP2 or newer (64-bit)</p>
+        <p><b>Processor:</b> Intel Haswell 2 cores / 4 threads @ 2.5 GHz</p>
+        <p><b>Memory:</b> 4 GB RAM</p>
+        <p><b>Graphics:</b> Intel HD 4600</p>
+        <p><b>DirectX:</b> Version 11</p>
+        <p><b>Storage:</b> 20 GB available space</p>
+
+
+        <p class="note">
+            Note: A RAR extractor is required to extract the game files.
+        </p>
+
+
+        <p>
+            <b>Need a RAR extractor?</b>
+            <a href="https://www.rarlab.com/download.htm">
+                Get WinRAR
+            </a>
+        </p>
+
+
+        <a href="https://gofile.io/d/XXUKgO">
+            Download
+        </a>
+
+    </div>
+
+
+    <!-- SEARCH FUNCTION -->
+
+    <script>
+
+        const search = document.getElementById("search");
+        const games = document.querySelectorAll(".game-card");
+
+        search.addEventListener("input", function () {
+
+            const searchText = search.value.toLowerCase();
+
+            games.forEach(function (game) {
+
+                const gameName = game.dataset.game.toLowerCase();
+
+                if (gameName.includes(searchText)) {
+                    game.style.display = "block";
+                } else {
+                    game.style.display = "none";
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
